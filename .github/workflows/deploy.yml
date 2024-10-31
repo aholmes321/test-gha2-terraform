@@ -31,7 +31,7 @@ jobs:
         id: plan
         run: terraform plan
         working-directory: ./Terraform-VPC
-      - name: Terraform Apply
+      - name: Terraform Destroy
         id: apply
-        run: terraform apply --auto-approve
+        run: terraform destroy --auto-approve
         working-directory: ./Terraform-VPC
